@@ -54,6 +54,18 @@ function managerRole() {
                 type: 'input',
                 name: 'email',
                 message: 'Manager\'s email address?',
+                validate: function (email) {
+  
+                    valid = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(email)
+  
+                        if (valid) {
+                            return true;
+                        } else {
+                            console.log('Please enter a valid email')
+                            return false;
+                        }
+
+                }
             },
             {
                 type: 'input',
@@ -126,6 +138,18 @@ function engineerRole(data) {
                 type: 'input',
                 name: 'email',
                 message: 'Engineer\'s email address?',
+                validate: function (email) {
+  
+                    valid = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(email)
+  
+                        if (valid) {
+                            return true;
+                        } else {
+                            console.log('Please enter a valid email')
+                            return false;
+                        }
+
+                }
             },
             {
                 type: 'input',
@@ -178,7 +202,19 @@ function internRole() {
                 type: 'input',
                 name: 'email',
                 message: 'Intern\'s email address?',
-            },            
+                validate: function (email) {
+  
+                    valid = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(email)
+  
+                        if (valid) {
+                            return true;
+                        } else {
+                            console.log('Please enter a valid email')
+                            return false;
+                        }
+
+                }
+            },           
             {
                 type: 'input',
                 name: 'school',
