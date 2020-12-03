@@ -4,6 +4,7 @@ const inquirer = require('inquirer');
 const manager = ["Manager"];
 const engineer = ["Engineer"]
 const intern = ["Intern"]
+let employeeList = [];
 
 function managerRole() {
 
@@ -38,10 +39,23 @@ function managerRole() {
         ])
     
         .then((data) => {
-            manager.push(data.name);
-            manager.push(data.idInfo);
-            manager.push(data.email);
-            manager.push(data.office);
+            // manager.push(data.name);
+            // manager.push(data.idInfo);
+            // manager.push(data.email);
+            // manager.push(data.office);
+
+            let managerName = data.name;
+            let managerID = data.idInfo;
+            let managerEmail = data.emaill;
+            let managerOffice = data.office;
+            let manager = new Manager(
+                managerName,
+                managerID,
+                managerEmail,
+                managerOffice
+            );
+
+            employeeList.push(manager);    
 
             if (data.morePeople === "Yes") {
                 employeeRole();
@@ -106,6 +120,19 @@ function engineerRole(data) {
             engineer.push(data.email);
             engineer.push(data.github);
 
+            let engineerName = data.name;
+            let engineerID = data.idInfo;
+            let engineerEmail = data.emaill;
+            let engineerOffice = data.office;
+            let engineer = new Engineer(
+                engineerName,
+                engineerID,
+                engineerEmail,
+                engineerOffice
+            );
+
+            employeeList.push(engineer);
+
             if (data.morePeople === "Yes") {
                 employeeRole();
             } else {
@@ -149,6 +176,19 @@ function internRole() {
             intern.push(data.idInfo);
             intern.push(data.email);
             intern.push(data.school);
+
+            let internName = data.name;
+            let internID = data.idInfo;
+            let internEmail = data.emaill;
+            let internOffice = data.office;
+            let intern = new Intern(
+                internName,
+                internID,
+                internEmail,
+                internOffice
+            );
+
+            employeeList.push(intern);
                         
             if (data.morePeople === "Yes") {
                 employeeRole();
@@ -163,6 +203,7 @@ function writeInfo(data) {
     console.log(manager);
     console.log(engineer);
     console.log(intern);
+    console.log(employeeList);
     const redmeFile = `
     # Test
     
