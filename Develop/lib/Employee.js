@@ -22,3 +22,6 @@ class Employee {
 }
 
 module.exports = Employee;
+
+// let test = new Employee("Nick", 10, "nleoni@email.com")
+// console.log(test);
