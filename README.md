@@ -27,5 +27,5 @@
 #### If you have any additional questions, please contact me at nicholas.leoni@gmail.com
 
 ## Screenshot
-![Screenshot](./Assets\10-OOP-homework-demo-1.png)
+![Screenshot](./Assets/my_team.PNG)
 
