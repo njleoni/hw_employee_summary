@@ -23,7 +23,7 @@
 ## Tests
     npm run test
 ## Questions
-[GitHub Repo Link](https://github.com/njleoni/HW_EMPLOYEE_SUMMARY)[Screencastify Link](https://drive.google.com/file/d/1OGCGkxQykXynQv58nLxzmi8psXL6SL2q/view)
+[GitHub Repo Link](https://github.com/njleoni/HW_EMPLOYEE_SUMMARY)\n[Screencastify Link](https://drive.google.com/file/d/1OGCGkxQykXynQv58nLxzmi8psXL6SL2q/view)
 #### If you have any additional questions, please contact me at nicholas.leoni@gmail.com
 
 ## Screenshot
